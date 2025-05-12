@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caderno</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Caderno</h1>
+        <nav>
+            <ul>
+                <li class="nav"><a href="index.html">Home</a></li>
+                <li class="nav"><a href="plano_de_estudos.html">Plano de estudo</a></li>
+                <li class="nav"><a href="anotacoes.html">Anotações</a></li>
+                <li class="nav"><a href="historico.html">Histórico</a></li>
+                <li class="nav"><a href="sobre_nos.html">Sobre nós</a></li>
+                <li class="nav"><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Anotações</h2>
+        <p>Aqui você cria seus <strong>focos de estudo</strong>. Focos podem ser relacionados como pais e filhos.</p>
+
+        <hr>
+
+        <section>
+            <form id="form-focos-estudos" onsubmit="event.preventDefault(); focoSalvarPrincipal();">
+                <div>
+                    <label for="titulo-foco">Título do foco:</label><br>
+                    <input type="text" id="titulo-foco" name="titulo-foco" required>
+                </div>
+
+                <div>
+                    <label for="conteudo-foco">Conteúdo do foco:</label><br>
+                    <textarea id="conteudo-foco" name="conteudo-foco" required></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Salvar Foco</button>
+                    <button type="button" onclick="document.getElementById('form-focos-estudos').reset()">Cancelar</button>
+                </div>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Focos criados:</h3>
+            <div id="focos-container"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

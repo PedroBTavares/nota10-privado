@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Caderno</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Caderno</h1>
+        <nav>
+            <ul>
+                <li class="nav"><a href="index.html">Home</a></li>
+                <li class="nav"><a href="plano_de_estudos.html">Plano de estudo</a></li>
+                <li class="nav"><a href="anotacoes.html">Anotações</a></li>
+                <li class="nav"><a href="historico.html">Histórico</a></li>
+                <li class="nav"><a href="sobre_nos.html">Sobre nós</a></li>
+                <li class="nav"><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Plano de Estudos</h2>
+
+        <section>
+            <form id="form-planos-estudos">
+                <input type="text" id="titulo-plano" placeholder="Título do plano" /><br>
+                <button type="button" onclick="planoExibirEtapa1()">Próximo</button>
+                <button type="button" onclick="planoCancelar()">Cancelar</button>
+
+                <div id="atividade" class="display">
+                    <label for="atividade-plano">Adicione uma atividade:</label><br>
+                    <input type="text" id="atividade-plano" placeholder="Descrição da atividade" /><br>
+                    <button type="button" onclick="planoExibirEtapa2()">Avançar</button>
+                    <button type="button" onclick="planoCancelar()">Cancelar atividade</button>
+                </div>
+
+                <div id="organizacao" class="display">
+                    <p>Escolha a forma de organização da atividade:</p>
+                    <button type="button" class="exibir-organizar">organização sem data</button>
+                    <button type="button" class="exibir-organizar">organização com data</button>
+                    <button type="button" onclick="planoCancelar()">Cancelar</button>
+                </div>
+
+                <div id="posicionamento" class="display">
+                    <p>Posicione esta atividade em relação às outras (sem data definida).</p>
+                    <button type="button" id="organizacao-sem-data" onclick="planoSalvar(this)">Salvar atividade</button>
+                    <button type="button" onclick="planoCancelar()">Cancelar atividade</button>
+                </div>
+
+                <div id="datas" class="display">
+                    <label for="data-inicio-plano">Data de início:</label><br>
+                    <input type="date" id="data-inicio-plano"><br>
+                    <label for="data-fim-plano">Data de fim:</label><br>
+                    <input type="date" id="data-fim-plano"><br>
+                    <button type="button" id="organizacao-com-data" onclick="planoSalvar(this)">Salvar atividade</button>
+                    <button type="button" onclick="planoCancelar()">Cancelar</button>
+                </div>
+            </form>
+        </section>
+
+        <h3>Seus Planos:</h3>
+        <section id="planos-container"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

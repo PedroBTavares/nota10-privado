@@ -1,0 +1,199 @@
+/*
+A documentação vai se adaptar as alterações feitas. Se tiver algo muito importante que não pode faltar nela, avise.
+*/
+
+/* tem instruções no script talvez você precise ler elas e o código do Paulo para poder estilizar tudo. */
+
+/* esse estilo foi somente para organização se quiser excluir tudo não tem problema. */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    background: rgb(62, 17, 125);
+    color: rgb(176, 222, 246);
+    padding: 20px
+}
+h1{
+    color: rgb(196, 241, 206);
+    font-family: "Poiret One", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+}
+main{
+    padding: 10px;
+}
+#conteudo-foco{
+    width: 95vw;
+    height: 80vh;
+}
+.lista li, #relacoes-ul{
+    list-style: inside;
+}
+
+.display{display: none;} /* se quiser excluir isso converse com o Paulo */
+nav{
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(176, 222, 246);
+}
+.nav, a{
+    list-style: none;
+    display: inline;
+    padding: 5px;
+}
+.nav :hover{
+    background: rgb(8, 87, 116);
+    border-radius: 5px;
+    color: rgb(168, 236, 183);
+}
+body{
+    color: rgb(8, 87, 116);
+}
+h2{
+    margin-bottom: 15px;
+    border-bottom: solid 2px rgb(8, 87, 116);
+    font-weight: 800;
+}
+h2, h3{
+    color: rgb(62, 17, 125);
+}
+h3{
+    font-weight: 600;
+}
+h3, p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input, textarea{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: rgb(196, 241, 206);
+    color: rgb(8, 87, 116);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(8, 87, 116);
+    padding: 5px;
+}
+button, #enviar{
+    background: rgb(62, 17, 125);
+    color: rgb(176, 222, 246);
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(8, 87, 116);
+}
+button :hover{
+    border-width: 2px;
+    background: rgb(8, 87, 116);
+    color: rgb(168, 236, 183);
+}
+@media (max-width: 767px) {
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 5px;
+    }
+
+    #conteudo-foco {
+        width: 100vw;
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav, a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    input, textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    button, #enviar {
+        margin-top: 5px;
+        width: 100%;
+    }
+}
+@media (min-width: 767px) and (max-width: 1025px) {
+    header {
+        padding: 15px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    #conteudo-foco {
+        width: 90vw;
+        height: 70vh;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav, a {
+        padding: 8px 12px;
+        display: inline-block;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    input, textarea {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    button, #enviar {
+        width: auto;
+        padding: 8px 16px;
+    }
+}
+img{
+    width: 120px;
+}

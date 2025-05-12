@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caderno</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Caderno</h1>
+        <nav>
+            <ul>
+                <li class="nav"><a href="index.html">Home</a></li>
+                <li class="nav"><a href="plano_de_estudos.html">Plano de estudo</a></li>
+                <li class="nav"><a href="anotacoes.html">Anotações</a></li>
+                <li class="nav"><a href="historico.html">Histórico</a></li>
+                <li class="nav"><a href="sobre_nos.html">Sobre nós</a></li>
+                <li class="nav"><a href="ajuda.html">Ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Ajuda</h2>
+        <p>
+            Se houver dúvidas em como usar o site ou se ele apresentar problemas contate nossa equipe através do seguinte formulário.
+        </p>
+        <p>
+            <form method="post">
+                <p>
+                    <label for="nome-usuario">Digite seu nome <strong>completo</strong></label> <br>
+                    <input type="text" name="nome-usuario" id="nome-usuario" placeholder="João Silva">
+                </p>
+                <p>
+                    <label for="email-usuario">Digite seu email</label> <br>
+                    <input type="email" name="email-usuario" id="email-usuario" placeholder="email@gmail.com">
+                </p>
+                <p>
+                    <label for="mensagem-usuario">Sua mensagem:</label> <br>
+                    <textarea name="mensagem-usuario" id="mensagem-usuario" placeholder="Digite sua mensagem"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="enviar" id="enviar">
+                </p>
+            </form>
+        </p>
+        <!---->
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
