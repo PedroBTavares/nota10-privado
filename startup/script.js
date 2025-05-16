@@ -239,6 +239,10 @@ function salvarERecarregar() {
     exibirResumoAtividades();
 }
 
+function exibirCriacaoPlano(){
+    document.getElementById("plano-estudo").style.display = "block"
+}
+
 // Avança para a criação de atividade
 function planoExibirEtapa1() {
     const tituloInput = document.getElementById("titulo-plano").value;
