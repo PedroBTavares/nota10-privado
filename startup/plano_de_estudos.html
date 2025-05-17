@@ -29,13 +29,15 @@
     <main>
         <h2>Plano de Estudos</h2>
 
-        <button onclick="exibirCriacaoPlano()">criar plano</button>
+        <button onclick="exibicaoCriacaoPlano()">criar plano</button>
 
         <section id="plano-estudo">
             <form id="form-planos-estudos">
-                <input type="text" id="titulo-plano" placeholder="Título do plano" /><br>
-                <button type="button" onclick="planoExibirEtapa1()">Próximo</button>
-                <button type="button" onclick="planoCancelar()">Cancelar</button>
+                <div class="display especial">
+                    <input type="text" id="titulo-plano" placeholder="Título do plano" /><br>
+                    <button type="button" onclick="planoExibirEtapa1()">Próximo</button>
+                    <button type="button" onclick="planoCancelar()">Cancelar</button>
+                </div>
 
                 <div id="atividade" class="display">
                     <label for="atividade-plano">Adicione uma atividade:</label><br>
