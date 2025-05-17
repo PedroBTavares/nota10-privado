@@ -321,6 +321,8 @@ function salvarERecarregar() {
 function exibicaoCriacaoPlano(){
     const planoEstudo = document.getElementById("plano-estudo")
     planoEstudo.style.display == "block" ? planoEstudo.style.display = "none" : planoEstudo.style.display = "block"
+    const displayEspecial = document.querySelectorAll(".display.especial")[0]
+    displayEspecial.style.display = "block"
 }
 
 // Avança para a criação de atividade
